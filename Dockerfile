@@ -5,7 +5,7 @@ FROM node:20-slim AS builder
 WORKDIR /app
 
 # Copy root configuration files
-COPY package.json package-lock.json nx.json tsconfig.base.json ./
+COPY package.json package-lock.json nx.json tsconfig.base.json eslint.config.mjs ./
 
 # Copy source code
 COPY apps ./apps
